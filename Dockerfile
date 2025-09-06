@@ -1,8 +1,8 @@
-# 1. Base image - lightweight Nginx (web server)
+# Use nginx to serve static content
 FROM nginx:alpine
 
-# 2. Copy current files (HTML/CSS) into Nginx’s default folder
+# Copy your HTML and other files to nginx's public folder
 COPY . /usr/share/nginx/html
 
-# 3. Expose port 80 for web access
+# Expose port 80 to Render
 EXPOSE 80
