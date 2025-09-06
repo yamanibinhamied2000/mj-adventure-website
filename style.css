@@ -1,0 +1,28 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f8ff;
+  text-align: center;
+  padding: 20px;
+  color: #333;
+}
+
+header {
+  background-color: #0077b6;
+  color: white;
+  padding: 20px;
+}
+
+.services, .booking {
+  margin: 30px 0;
+}
+
+form input, form select, form button {
+  padding: 10px;
+  margin: 5px;
+  width: 200px;
+}
+
+footer {
+  margin-top: 50px;
+  font-size: 14px;
+}
