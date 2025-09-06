@@ -1,28 +1,73 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f0f8ff;
-  text-align: center;
-  padding: 20px;
-  color: #333;
+  font-family: 'Inter', sans-serif;
+  background: #f2f6f9;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-  background-color: #0077b6;
+  background-color: #0077cc;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+  margin-top: 30px;
+}
+
+.services ul {
+  list-style: none;
+  padding: 0;
+  line-height: 2;
+  font-size: 18px;
+}
+
+.services li::before {
+  content: "✅ ";
+}
+
+.booking form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, select {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #0077cc;
   color: white;
-  padding: 20px;
+  padding: 12px;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
-.services, .booking {
-  margin: 30px 0;
-}
-
-form input, form select, form button {
-  padding: 10px;
-  margin: 5px;
-  width: 200px;
-}
-
-footer {
-  margin-top: 50px;
-  font-size: 14px;
+button:hover {
+  background-color: #005fa3;
 }
